@@ -149,7 +149,7 @@ def Run():
             Announcer = True
             doorCounter = doorCounter + 1
         if doorCounter == 1 and Announcer == True:
-            t.sleep(0)
+            t.sleep(5)
             play(ThisIs)
             Announce(LastStopList[0])
             play(NextStation)
@@ -157,7 +157,7 @@ def Run():
             Announcer = False
         if doorCounter == 2:
             counter2=0
-            t.sleep(0)
+            t.sleep(25)
             play(Welcome)
             play(operator)
             play(ServiceTo)
@@ -180,6 +180,7 @@ def Run():
             Announcer = True
             doorCounter = doorCounter + 1
         if doorCounter == 1 and Announcer == True:
+            t.sleep(5)
             play(ThisIs)
             Announce(LastStopList[0])
             play(NextStation)
