@@ -22,14 +22,22 @@ This program has multiple features including...
 -All station names (V1.2.1)
 
 
-For creating your own sound sets use the folder structure:  BRannouner>Sounds>SoundSetName
->dest
+For creating your own sound sets use the folder structure:  
 
->info
+BRannouner
 
->operators
+>UI>BRlogo.png
+>
+>Sounds
+>>SoundSetName
 
->stations
+>>>dest
+
+>>>info
+
+>>>operators
+
+>>>stations
 
 dest folder is for destination sound files
 
