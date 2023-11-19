@@ -202,6 +202,7 @@ def Run():
             play(Terminate)
             Announcer = False
         if doorCounter == 3:
+            t.sleep(5)
             play(ThisIs)
             play(destination)
             play(Terminate)
