@@ -163,6 +163,7 @@ def Run():
             play(ServiceTo)
             play(destination)
             if LastStopList[0] in MainStation:
+                play(CallingAt)
                 Calling = True
                 for x in StopList:
                     counter2 = counter2 + 1
