@@ -5,11 +5,11 @@ Dependecies:
 
 -Python
 
--ffmpeg
+-ffmpeg tutorial: https://phoenixnap.com/kb/ffmpeg-windows
 
--keyboard
+-keyboard Use installDependencies.bat
 
--pydub
+-pydub Use installDependencies.bat
 
 To run this program when all the dependecies are installed, run the run.bat file included.
 
