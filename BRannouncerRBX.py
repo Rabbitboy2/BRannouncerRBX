@@ -7,6 +7,7 @@ from tkinter import *
 import tkinter
 import os
 from pathlib import Path
+import random as r
 
 window1 = Tk()
 Fvar = StringVar()
@@ -56,6 +57,8 @@ window1.title("BR Announcer")
 
 #Set Variables
 def Run():
+    Extras = os.listdir(os.path.join("Sounds", Fvar.get(), "extra"))
+    Epath = os.path.join("Sounds", Fvar.get(), "extra")
     Stations = os.listdir(os.path.join("Sounds", Fvar.get(), "stations"))
     Destinations = os.listdir(os.path.join("Sounds", Fvar.get(), "dest"))
     Operators = os.listdir(os.path.join("Sounds", Fvar.get(), "operators"))
@@ -72,8 +75,8 @@ def Run():
     fConfirm.destroy()
     StartupButton.destroy()
     FolderLabel.destroy()
-    Welcome = AS.from_mp3(Folder +"\\info" + "\Welcome.mp3")
-    ServiceTo = AS.from_mp3(Folder +"\\info" + "\ServiceTo.mp3")
+    Welcome = AS.from_mp3(Folder +"\\info" + "\\Welcome.mp3")
+    ServiceTo = AS.from_mp3(Folder +"\\info" + "\\ServiceTo.mp3")
     NextStation = AS.from_mp3(Folder +"\\info" + "\\NextStation.mp3")
     Terminate = AS.from_mp3(Folder +"\\info" + "\\Terminate.mp3")
     Only = AS.from_mp3(Folder +"\\info" + "\\Only.mp3")
@@ -135,10 +138,12 @@ def Run():
     operator = Ovar.get() + ".mp3"
     origin = ORvar.get()
     destination = Dvar.get()
-    if StopList[0] == origin:
-        StopList.pop(0)
-    if StopList[-1] == destination:
-        StopList.pop()
+    if StopList:
+        if StopList[0] == origin:
+            StopList.pop(0)
+    if StopList:
+        if StopList[-1] == destination:
+            StopList.pop()
     destination=Dvar.get() + ".mp3"
     sPath = os.path.join(Folder, 'stations')
     oPath = os.path.join(Folder, 'operators')
@@ -180,12 +185,20 @@ def Run():
             LastStopList.pop(0)
             LastStopList.append(StopList[0])
             StopList.pop(0)
-            doorCounter = 0           
+            doorCounter = 0          
+        if keyboard.is_pressed("y"):
+            if Extras:
+                sRandom = AS.from_mp3(os.path.join(Epath, r.choice(Extras)))
+                play(sRandom)
     LastStop = True
     while LastStop == True:
         if keyboard.is_pressed("t"):
             Announcer = True
             doorCounter = doorCounter + 1
+        if keyboard.is_pressed("y"):
+            if Extras:
+                sRandom = AS.from_mp3(os.path.join(Epath, r.choice(Extras)))
+                play(sRandom)
         if doorCounter == 1 and Announcer == True:
             t.sleep(5)
             play(ThisIs)
