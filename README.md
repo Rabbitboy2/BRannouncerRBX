@@ -39,11 +39,15 @@ BRannouner
 
 >>>stations
 
+>>>extra
+
 dest folder is for destination sound files
 
 operators folder is for operator sound files
 
 stations folder is for station sound files
+
+extra folder is for extra sound files that can be played by using y key instead of t
 
 info folder is for all of the other sound files (These ones are required)
 
