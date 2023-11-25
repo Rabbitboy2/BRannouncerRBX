@@ -1,1 +1,2 @@
-python BRannouncerRBX.py
+python BRannouncer.py
+py BRannouncerRBX.py
