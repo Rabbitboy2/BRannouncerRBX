@@ -3,7 +3,7 @@ This is an announcer program for the roblox game 'British Railway'.
 
 Dependecies:
 
--Python
+-Python (Must be added to PATH)
 
 -ffmpeg tutorial: https://phoenixnap.com/kb/ffmpeg-windows
 
