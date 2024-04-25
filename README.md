@@ -17,7 +17,7 @@ This program has multiple features including...
 
 -A tkinter based dropdown interface
 
--All station names (V1.2.1)
+-All station names (V1.3 (predicted))
 
 
 For creating your own sound sets use the folder structure:  
