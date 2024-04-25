@@ -5,11 +5,9 @@ Dependecies:
 
 -Python (Must be added to PATH)
 
--ffmpeg tutorial: https://phoenixnap.com/kb/ffmpeg-windows
+-playsound (use installDependencies.bat to install)
 
--keyboard Use installDependencies.bat
-
--pydub Use installDependencies.bat
+-keyboard (use installDependencies.bat to install)
 
 To run this program when all the dependecies are installed, run the run.bat file included.
 
