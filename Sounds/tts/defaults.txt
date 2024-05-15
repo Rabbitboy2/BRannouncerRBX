@@ -1,0 +1,1 @@
+{"MainStations":["Leaton", "Norrington", "Freston Junction", "Newhurst", "Belmond Green", "Hulme Heath", "Mill Bridge", "Avonhill"], "Operator": "Regional", "Origin":"Norrington","Destination":"Avonhill","Station":"Leaton","Keybinds":["t","t","y"]}
