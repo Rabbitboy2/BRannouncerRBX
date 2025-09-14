@@ -17,12 +17,12 @@ This program has multiple features including...
 
 -A tkinter based dropdown interface
 
--All station names (V1.3 (predicted))
+-All station names (as of V1.3). This list is no longer updated due to the devs adding an announcement system in game. 
 
 
 For creating your own sound sets use the folder structure:  
 
-BRannouner
+BRannouncer
 
 >UI>BRlogo.png
 >
