@@ -9,7 +9,7 @@ import random as r
 from playsound import playsound
 import json
 
-test = 'hello git'
+test = 'hello git tester 2'
 gui = Tk()
 Fvar = StringVar()
 Ovar = StringVar()
